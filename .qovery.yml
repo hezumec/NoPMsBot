@@ -1,0 +1,15 @@
+---
+application:
+  name: "nopmsbot"
+  project: "EAES Gix Alpha"
+  organization: "QoveryCommunity"
+databases:
+- type: "MONGODB"
+  name: "nopmsdb"
+  version: "4.4"
+routers:
+- name: "main-nopmsbot"
+  routes:
+  - application_name: "nopmsbot"
+    paths:
+    - "/*"
